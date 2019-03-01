@@ -1,6 +1,11 @@
 <h1>Cocktails</h1>
-<ul><% @cocktails.each do |cocktail| %>
-  <li class="card-drink"><%= link_to cocktail.name, cocktail_path(cocktail) %> <%= cl_image_tag cocktail.photo.url(:small) %> </li>
+<% @cocktails.each do |cocktail| %>
+  <div class="container-index" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1485686531765-ba63b07845a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=747&q=80');">
+    <div class="cocktail-card col-xs-12 col-md-6">
+      <div class="cocktail-card-name"><%= link_to cocktail.name, cocktail_path(cocktail)%></div>
+      <div class="cocktail-card-photo"><%= cl_image_tag cocktail.photo.url(:small)%></div>
+    </div>
+  </div>
   <% end %>
-</ul>
+  <br>
 <p class="btn btn-danger"><%= link_to 'Add a cocktail', new_cocktail_path %></p>
