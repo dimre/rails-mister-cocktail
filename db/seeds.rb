@@ -8,7 +8,10 @@
 require 'open-uri'
 
 puts 'Cleaning database...'
+Dose.destroy_all
 Ingredient.destroy_all
+Cocktail.destroy_all
+
 
 puts 'Creating ingredients...'
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
