@@ -1,11 +1,14 @@
 <h1>Cocktails#new</h1>
-<div class="card">
 <%= simple_form_for @cocktail do |f| %>
-  <div class="form-group">
+
+  <div class="form-inputs">
     <%= f.label :name, "Enter a name" %>
     <%= f.text_field :name %>
+    <%= f.input :photo %>
+    <%= f.input :photo_cache, as: :hidden %>
   </div>
-  <%= f.button :submit, class: "btn btn-danger" %>
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-danger" %>
+  </div>
 <% end %>
-</div>
 <p><%= link_to 'Back to cocktail list', cocktails_path %></p>
