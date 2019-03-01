@@ -12,8 +12,10 @@
   </head>
 
   <body>
-    <div class="container-fluid">
-      <%= yield %>
+    <div class="wrapper">
+      <div class="container-fluid">
+        <%= yield %>
+      </div>
     </div>
   <%= javascript_include_tag "application" %>
   <%= javascript_pack_tag "application" %>

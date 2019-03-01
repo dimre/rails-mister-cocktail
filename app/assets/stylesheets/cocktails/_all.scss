@@ -7,9 +7,14 @@
   padding: 20px;
   border-radius: 3px;
   background-color: white;
-  box-shadow: 0px 2px 5px #c5c5c5;
+  box-shadow: 0px 2px 3px #c5c5c5;
 }
-.cocktail-card-photo {
+.wrapper {
+  background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80');
+  height: 100vh;
+}
+h1 {
+  color: white;
 }
 // body {
 // background-image: url("https://images.unsplash.com/photo-1468072114808-903e572b8ead?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80")
